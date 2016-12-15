@@ -1,0 +1,48 @@
+@import "reset";
+
+$cream: #EADFBB;
+$dark-brown: #A04616;
+
+
+body {
+    font-family: "Myriad Set Pro","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+    background: url('images/figgy-background.png') repeat-x center top #8CDDCC;
+    color: $dark-brown;
+    line-height: 1.4em;
+}
+
+.hidden {
+    display: none;
+}
+
+img.figgy-animation {
+    display: block;
+    margin: auto;
+    padding: 2em 0;
+    width: 400px;
+}
+
+.playlist {
+    text-align: center;
+    font-size: 1.3em;
+    width: 100%;
+    iframe {
+        border: solid .4em $cream;
+        text-align: center;
+        background-color: $cream;
+    }
+}
+
+footer {
+    padding: 2em;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    img.figgy-animation {
+        width: 300px;
+    }
+    iframe {
+        width: 300px;
+    }
+}
